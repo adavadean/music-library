@@ -27,3 +27,4 @@ cd music-library
 ## More info
 In Visual Studio Code for example, you can open 2 different terminals for backend and frontend and run cd Backend and cd Frontend and run the npm start command for each.
 Initally, if you want to start with some data you can run the command node import_data.js in the Backend terminal that will import the data from the data.json file
+For the CRUD operations sometimes you have to refresh the page :) 

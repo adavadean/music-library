@@ -15,7 +15,5 @@ export const updateAlbum = (id, album) => api.put(`/albums/${id}`, album);
 export const deleteAlbum = (id) => api.delete(`/albums/${id}`);
 
 export const search = (query) => api.get(`/search?query=${query}`);
-export const registerUser = (userData) => api.post('/auth/register', userData);
-export const loginUser = (userData) => api.post('/auth/login', userData);
 
 export default api;

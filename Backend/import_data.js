@@ -8,15 +8,12 @@ connectDB();
 
 const importData = async () => {
   try {
-    // Citire fișier data.json
     const rawData = fs.readFileSync('./data.json', 'utf-8');
-    console.log('Raw Data:', rawData); // Debug: afișează conținutul brut al fișierului
+    console.log('Raw Data:', rawData); 
 
-    // Parsare fișier JSON
     const data = JSON.parse(rawData);
-    console.log('Parsed Data:', data); // Debug: afișează datele parsate
+    console.log('Parsed Data:', data); 
 
-    // Ștergere date existente
     await Artist.deleteMany();
     await Album.deleteMany();
 
@@ -41,7 +38,7 @@ const importData = async () => {
     console.log('Data Imported!');
     process.exit();
   } catch (err) {
-    console.error('Error:', err.message); // Modificați pentru a afișa mesajul de eroare
+    console.error('Error:', err.message); 
     process.exit(1);
   }
 };

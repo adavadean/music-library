@@ -21,7 +21,7 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/adavadean/music-library.git
+git clone https://github.com/adavadean/music-library/tree/master
 cd music-library
 
 ## More info
